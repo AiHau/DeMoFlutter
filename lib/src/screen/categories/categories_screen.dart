@@ -1,5 +1,3 @@
-import 'dart:ui';
-
 import 'package:demo/components/stateful/button_categories.dart';
 import 'package:demo/components/stateful/item_categories.dart';
 import 'package:demo/src/model/categories_model.dart';
@@ -7,6 +5,7 @@ import 'package:flutter/material.dart';
 
 // ignore: camel_case_types
 class categoriesScreen extends StatefulWidget {
+  static String routeName = "/categories";
   const categoriesScreen({Key? key}) : super(key: key);
 
   @override
@@ -19,9 +18,24 @@ class _categoriesScreenState extends State<categoriesScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        leading: const Icon(Icons.arrow_back_ios),
-        title: Center(child: item(name: 'Categories')),
-        actions: const [Icon(Icons.menu)],
+        foregroundColor: Colors.black,
+        leading: IconButton(
+            icon: const Icon(
+              Icons.arrow_back_ios_new_rounded,
+            ),
+            onPressed: () {
+              Navigator.pop(context);
+            }),
+        title: const Center(
+            child: Text(
+          "Categories",
+          style: TextStyle(color: Color.fromARGB(255, 54, 53, 53)),
+        )),
+        actions: const [
+          Icon(
+            Icons.menu,
+          )
+        ],
       ),
       body: _categoriesBody(),
     );
@@ -34,7 +48,9 @@ class _categoriesScreenState extends State<categoriesScreen> {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
+          SizedBox(height: 30.0),
           _searchByCategories(),
+          SizedBox(height: 30.0),
           Expanded(child: _listCategories()),
           _buttonCategories(),
         ],

@@ -1,5 +1,8 @@
-import 'package:demo/src/screen/categories_screen.dart';
-import 'package:demo/src/screen/onboarding_screen.dart';
+// ignore_for_file: prefer_const_constructors, deprecated_member_use
+
+import 'package:demo/routs.dart';
+import 'package:demo/src/screen/categories/categories_screen.dart';
+import 'package:demo/src/screen/onboarding/onboarding_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -16,9 +19,17 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        // primarySwatch: Colors.blue,
+        appBarTheme: AppBarTheme(
+          color: Colors.white,
+          elevation: 0,
+          brightness: Brightness.light,
+          iconTheme: IconThemeData(color: Color.fromARGB(255, 91, 85, 85)),
+        ),
       ),
-      home: const onBoardingScreen(),
+      // home: const onBoardingScreen(),
+      initialRoute: onBoardingScreen.routeName,
+      routes: routes,
     );
   }
 }
