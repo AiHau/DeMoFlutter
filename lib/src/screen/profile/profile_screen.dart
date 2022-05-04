@@ -1,13 +1,15 @@
-import 'package:demo/src/screen/sign_up/components/body.dart';
+import 'package:demo/src/screen/profile/components/navbar/NavBar.dart';
+import 'package:demo/src/screen/profile/components/body.dart';
 import 'package:flutter/material.dart';
 
-class SignUpScreen extends StatelessWidget {
-  static String routeName = "/sign_up";
-  const SignUpScreen({Key? key}) : super(key: key);
+class ProfileScreen extends StatelessWidget {
+  static String routeName = "/profile";
+  const ProfileScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: NavBar(),
       appBar: AppBar(
         foregroundColor: Colors.black,
         leading: IconButton(
@@ -17,11 +19,6 @@ class SignUpScreen extends StatelessWidget {
             onPressed: () {
               Navigator.pop(context);
             }),
-        title: const Center(
-            child: Text(
-          "Sign Up",
-          style: TextStyle(color: Color.fromARGB(255, 54, 53, 53)),
-        )),
         actions: const [
           Padding(
             padding: EdgeInsets.only(right: 30),

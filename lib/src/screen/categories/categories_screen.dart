@@ -1,6 +1,8 @@
 import 'package:demo/components/stateful/button_categories.dart';
 import 'package:demo/components/stateful/item_categories.dart';
 import 'package:demo/src/model/categories_model.dart';
+import 'package:demo/src/screen/profile/profile_screen.dart';
+import 'package:demo/src/screen/sign_in/sign_in_screen.dart';
 import 'package:flutter/material.dart';
 
 // ignore: camel_case_types
@@ -32,8 +34,11 @@ class _categoriesScreenState extends State<categoriesScreen> {
           style: TextStyle(color: Color.fromARGB(255, 54, 53, 53)),
         )),
         actions: const [
-          Icon(
-            Icons.menu,
+          Padding(
+            padding: EdgeInsets.only(right: 30),
+            child: Icon(
+              Icons.menu,
+            ),
           )
         ],
       ),
@@ -48,9 +53,9 @@ class _categoriesScreenState extends State<categoriesScreen> {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          SizedBox(height: 30.0),
+          SizedBox(height: 10.0),
           _searchByCategories(),
-          SizedBox(height: 30.0),
+          SizedBox(height: 20.0),
           Expanded(child: _listCategories()),
           _buttonCategories(),
         ],
@@ -92,14 +97,25 @@ class _categoriesScreenState extends State<categoriesScreen> {
       children: [
         Expanded(
             child: Container(
-          // padding: EdgeInsets.fromLTRB(0.0, 5.0, 10.0, 5.0),
-          child: buttonCategories(text: 'Back', color: 0xffC0C0C0),
-          color: const Color(0xffffffff),
+          padding: EdgeInsets.fromLTRB(0.0, 5.0, 10.0, 5.0),
+          child: buttonCategories(
+              text: 'Back',
+              color: 0xffFFFFFF,
+              colorText: 0xffC0C0C0,
+              press: () {
+                Navigator.pushNamed(context, SignInScreen.routeName);
+              }),
         )),
         Expanded(
             child: Container(
           padding: const EdgeInsets.fromLTRB(10.0, 5.0, 0.0, 5.0),
-          child: buttonCategories(text: 'Next', color: 0xffFFFFFF),
+          child: buttonCategories(
+              text: 'Next',
+              color: 0xff20C3AF,
+              colorText: 0xffFFFFFF,
+              press: () {
+                Navigator.pushNamed(context, ProfileScreen.routeName);
+              }),
         )),
       ],
     );

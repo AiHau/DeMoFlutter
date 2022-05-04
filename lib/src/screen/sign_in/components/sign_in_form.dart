@@ -2,7 +2,6 @@ import 'package:demo/components/default_button.dart';
 import 'package:demo/components/socal_card.dart';
 import 'package:demo/src/screen/categories/categories_screen.dart';
 import 'package:demo/src/screen/sign_in/components/no_account_text.dart';
-import 'package:demo/src/screen/sign_up/sign_up_screen.dart';
 import 'package:flutter/material.dart';
 
 class SignForm extends StatefulWidget {

@@ -34,7 +34,13 @@ class _itemCategoriesState extends State<itemCategories> {
           ),
           Expanded(
             flex: 4,
-            child: Text(widget.text),
+            child: Text(
+              widget.text,
+              style: TextStyle(
+                  fontSize: 14,
+                  fontWeight: FontWeight.w500,
+                  color: Color.fromARGB(255, 145, 144, 144)),
+            ),
           ),
           Expanded(child: Icon(widget.icon)),
         ]),

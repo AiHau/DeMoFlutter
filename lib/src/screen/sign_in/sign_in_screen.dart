@@ -23,8 +23,11 @@ class SignInScreen extends StatelessWidget {
           style: TextStyle(color: Color.fromARGB(255, 54, 53, 53)),
         )),
         actions: const [
-          Icon(
-            Icons.menu,
+          Padding(
+            padding: EdgeInsets.only(right: 30),
+            child: Icon(
+              Icons.menu,
+            ),
           )
         ],
       ),

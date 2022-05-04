@@ -84,7 +84,7 @@ class _SignFormState extends State<SignForm> {
                 ),
               ],
             ),
-            SizedBox(height: 30.0),
+            SizedBox(height: 20.0),
             AccountText(),
           ],
         ),

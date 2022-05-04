@@ -1,6 +1,9 @@
 // ignore_for_file: deprecated_member_use
 
+import 'dart:async';
+
 import 'package:demo/components/default_button.dart';
+import 'package:demo/src/screen/categories/categories_screen.dart';
 import 'package:demo/src/screen/sign_in/sign_in_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:demo/src/screen/onboarding/components/onboarding_content.dart';
@@ -14,6 +17,9 @@ class Body extends StatefulWidget {
 
 class _BodyState extends State<Body> {
   int currentPage = 0;
+  var pageviewController = PageController(
+    initialPage: 0,
+  );
   List<Map<String, String>> onboardingData = [
     {
       "title": "Proven\nspecialists",
@@ -27,7 +33,7 @@ class _BodyState extends State<Body> {
     },
     {
       "title": "Insured\norders",
-      "text": "We insure each order for the\namount of 500",
+      "text": "We insure each order for the\namount of \$500",
       "image": "assets/images/Illustration_3.png",
     },
     {
@@ -38,6 +44,32 @@ class _BodyState extends State<Body> {
   ];
 
   @override
+  void initState() {
+    super.initState();
+    autoNextPage();
+  }
+
+  autoNextPage() {
+    Timer.periodic(const Duration(seconds: 5), (timer) {
+      if (currentPage < onboardingData.length - 1) {
+        setState(() {
+          currentPage = currentPage + 1;
+          // if (currentPage == onboardingData.length - 1) {
+          //   Future.delayed(const Duration(seconds: 3), () {
+          //     Navigator.push(
+          //       context,
+          //       MaterialPageRoute(builder: (context) => categoriesScreen()),
+          //     );
+          //   });
+          // }
+        });
+      }
+      pageviewController.animateToPage(currentPage,
+          duration: const Duration(milliseconds: 200), curve: Curves.easeIn);
+      // }
+    });
+  }
+
   Widget build(BuildContext context) {
     return SafeArea(
       child: SizedBox(
@@ -47,6 +79,8 @@ class _BodyState extends State<Body> {
             Expanded(
               flex: 8,
               child: PageView.builder(
+                controller: pageviewController,
+                scrollDirection: Axis.horizontal,
                 onPageChanged: (value) {
                   setState(() {
                     currentPage = value;

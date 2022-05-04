@@ -1,9 +1,9 @@
-import 'package:demo/src/screen/sign_up/components/body.dart';
+import 'package:demo/src/screen/notification/components/body.dart';
 import 'package:flutter/material.dart';
 
-class SignUpScreen extends StatelessWidget {
-  static String routeName = "/sign_up";
-  const SignUpScreen({Key? key}) : super(key: key);
+class NotificationScreen extends StatelessWidget {
+  static String routeName = "/notification";
+  const NotificationScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -19,7 +19,7 @@ class SignUpScreen extends StatelessWidget {
             }),
         title: const Center(
             child: Text(
-          "Sign Up",
+          "Notification",
           style: TextStyle(color: Color.fromARGB(255, 54, 53, 53)),
         )),
         actions: const [

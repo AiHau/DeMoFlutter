@@ -1,10 +1,19 @@
+// ignore_for_file: deprecated_member_use
+
 import 'package:flutter/material.dart';
 
 class buttonCategories extends StatefulWidget {
   String text;
   int color;
-  buttonCategories({Key? key, required this.text, required this.color})
-      : super(key: key);
+  int colorText;
+  Function? press;
+  buttonCategories({
+    Key? key,
+    required this.text,
+    required this.color,
+    required this.colorText,
+    this.press,
+  }) : super(key: key);
 
   @override
   State<buttonCategories> createState() => _buttonCategoriesState();
@@ -13,27 +22,18 @@ class buttonCategories extends StatefulWidget {
 class _buttonCategoriesState extends State<buttonCategories> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Row(children: [
-        Container(
-          height: 60.0,
-          width: 150.0,
-          child: Expanded(
-            child: ElevatedButton(
-              style: ButtonStyle(
-                  side: MaterialStateProperty.all(
-                      const BorderSide(color: Colors.grey, width: 1)),
-                  backgroundColor:
-                      MaterialStateProperty.all<Color>(Color(0xff20C3AF))),
-              child: Text(
-                widget.text,
-                style: TextStyle(color: Color(widget.color)),
-              ),
-              onPressed: () {},
-            ),
-          ),
-        )
-      ]),
+    return SizedBox(
+      width: double.infinity,
+      height: 60,
+      child: FlatButton(
+        shape: RoundedRectangleBorder(side: BorderSide(color: Colors.black12)),
+        color: Color(widget.color),
+        onPressed: widget.press as void Function()?,
+        child: Text(
+          widget.text,
+          style: TextStyle(fontSize: 18, color: Color(widget.colorText)),
+        ),
+      ),
     );
   }
 }

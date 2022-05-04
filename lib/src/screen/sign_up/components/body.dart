@@ -1,7 +1,3 @@
-import 'package:demo/components/default_button.dart';
-import 'package:demo/components/socal_card.dart';
-import 'package:demo/src/screen/sign_in/sign_in_screen.dart';
-import 'package:demo/src/screen/sign_up/components/login_account.dart';
 import 'package:demo/src/screen/sign_up/components/sign_up_form.dart';
 import 'package:flutter/material.dart';
 
@@ -19,7 +15,7 @@ class Body extends StatelessWidget {
             child: Column(
               children: [
                 Container(
-                  margin: EdgeInsets.symmetric(vertical: 50),
+                  margin: EdgeInsets.symmetric(vertical: 35),
                   child: Image(image: AssetImage("assets/images/sign_up.png")),
                 ),
                 SignForm(),
