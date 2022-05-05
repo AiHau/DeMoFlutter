@@ -1,9 +1,9 @@
+import 'package:demo/src/screen/listpayment/components/body.dart';
 import 'package:flutter/material.dart';
 
-class Home extends StatelessWidget {
-  
-  static String routeName = "/home";
-  const Home({Key? key}) : super(key: key);
+class ListPaymentScreen extends StatelessWidget {
+  static String routeName = '/listpayment';
+  const ListPaymentScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -19,7 +19,7 @@ class Home extends StatelessWidget {
             }),
         title: const Center(
             child: Text(
-          "Orders in progress",
+          'Payment cards',
           style: TextStyle(color: Color.fromARGB(255, 54, 53, 53)),
         )),
         actions: const [
@@ -31,6 +31,7 @@ class Home extends StatelessWidget {
           )
         ],
       ),
+      body: Body(),
     );
   }
 }
