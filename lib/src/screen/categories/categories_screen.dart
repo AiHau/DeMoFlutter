@@ -89,7 +89,7 @@ class _categoriesScreenState extends State<categoriesScreen> {
   }
 
   Widget item({required String name}) {
-    return Text('$name');
+    return Text(name);
   }
 
   Widget _buttonCategories() {

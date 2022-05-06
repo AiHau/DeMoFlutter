@@ -16,7 +16,7 @@ class _itemCategoriesState extends State<itemCategories> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.fromLTRB(0.0, 10.0, 0, 10.0),
+      padding: const EdgeInsets.fromLTRB(0.0, 10.0, 0, 10.0),
       child: Container(
         decoration: BoxDecoration(
             border: Border.all(
@@ -36,7 +36,7 @@ class _itemCategoriesState extends State<itemCategories> {
             flex: 4,
             child: Text(
               widget.text,
-              style: TextStyle(
+              style: const TextStyle(
                   fontSize: 14,
                   fontWeight: FontWeight.w500,
                   color: Color.fromARGB(255, 145, 144, 144)),

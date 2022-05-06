@@ -35,12 +35,12 @@ class itemNotification extends StatelessWidget {
           ),
           Text(
             content,
-            style: TextStyle(
+            style: const TextStyle(
                 height: 1.8,
                 fontSize: 16,
                 color: Color.fromARGB(255, 103, 102, 102)),
           ),
-          Divider(
+          const Divider(
             height: 50,
             thickness: 1,
             color: Color.fromARGB(255, 238, 238, 240),

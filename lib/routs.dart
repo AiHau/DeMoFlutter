@@ -1,4 +1,6 @@
 import 'package:demo/src/screen/categories/categories_screen.dart';
+import 'package:demo/src/screen/construction/construction_screen.dart';
+import 'package:demo/src/screen/customer/customer_screen.dart';
 import 'package:demo/src/screen/listpayment/list_payment_screen.dart';
 import 'package:demo/src/screen/notification/notification_screen.dart';
 import 'package:demo/src/screen/onboarding/onboarding_screen.dart';
@@ -6,6 +8,7 @@ import 'package:demo/src/screen/order_in_progress/order_screen.dart';
 import 'package:demo/src/screen/payment/payment_screen.dart';
 import 'package:demo/src/screen/profile/components/navbar/pages/home.dart';
 import 'package:demo/src/screen/profile/profile_screen.dart';
+import 'package:demo/src/screen/services/service_screen.dart';
 import 'package:demo/src/screen/setting/setting_screen.dart';
 import 'package:demo/src/screen/sign_in/sign_in_screen.dart';
 import 'package:demo/src/screen/sign_up/sign_up_screen.dart';
@@ -23,4 +26,7 @@ final Map<String, WidgetBuilder> routes = {
   SettingScreen.routeName: (context) => SettingScreen(),
   ListPaymentScreen.routeName: (context) => ListPaymentScreen(),
   PaymentScreen.routeName: (context) => PaymentScreen(),
+  ServiceScreen.routeName: (context) => ServiceScreen(),
+  CustomerScreen.routeName: (context) => CustomerScreen(),
+  ConstructionScreen.routeName: (context) => ConstructionScreen(),
 };

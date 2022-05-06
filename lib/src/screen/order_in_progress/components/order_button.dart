@@ -1,4 +1,6 @@
 import 'package:demo/components/stateful/button_categories.dart';
+import 'package:demo/src/screen/construction/construction_screen.dart';
+import 'package:demo/src/screen/services/service_screen.dart';
 import 'package:demo/src/screen/setting/setting_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -16,7 +18,9 @@ class ButtonOrder extends StatelessWidget {
               text: 'Archive',
               color: 0xffFFFFFF,
               colorText: 0xffC0C0C0,
-              press: () {}),
+              press: () {
+                Navigator.pushNamed(context, ServiceScreen.routeName);
+              }),
         )),
         Expanded(
             child: Container(
@@ -26,7 +30,7 @@ class ButtonOrder extends StatelessWidget {
               color: 0xff20C3AF,
               colorText: 0xffFFFFFF,
               press: () {
-                Navigator.pushNamed(context, SettingScreen.routeName);
+                Navigator.pushNamed(context, ConstructionScreen.routeName);
               }),
         )),
       ],

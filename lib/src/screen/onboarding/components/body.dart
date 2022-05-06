@@ -50,7 +50,7 @@ class _BodyState extends State<Body> {
   }
 
   autoNextPage() {
-    Timer.periodic(const Duration(seconds: 5), (timer) {
+    Timer.periodic(const Duration(seconds: 10), (timer) {
       if (currentPage < onboardingData.length - 1) {
         setState(() {
           currentPage = currentPage + 1;
@@ -119,7 +119,10 @@ class _BodyState extends State<Body> {
                                   context, SignInScreen.routeName);
                             },
                             tooltip: 'Increment',
-                            child: const Icon(Icons.add),
+                            child: const Icon(
+                              Icons.add,
+                              size: 25,
+                            ),
                           )
                         : DefaultButton(
                             text: "Next",
