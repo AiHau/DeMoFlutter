@@ -53,6 +53,7 @@ class _BodyState extends State<Body> {
             Expanded(
               flex: 10,
               child: Container(
+                margin: EdgeInsets.only(top: 30),
                 child: _listNotification(),
               ),
             ),
