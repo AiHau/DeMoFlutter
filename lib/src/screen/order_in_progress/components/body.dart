@@ -1,4 +1,3 @@
-import 'package:demo/components/stateful/button_categories.dart';
 import 'package:demo/src/screen/order_in_progress/components/item_order.dart';
 import 'package:demo/src/screen/order_in_progress/components/order_button.dart';
 import 'package:flutter/material.dart';
@@ -57,12 +56,13 @@ class _BodyState extends State<Body> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Container(
-        padding: EdgeInsets.symmetric(horizontal: 35),
+        padding: const EdgeInsets.symmetric(horizontal: 35),
         child: Column(
           children: [
             Expanded(
               flex: 10,
               child: Container(
+                margin: const EdgeInsets.only(top: 30),
                 child: GridView.count(
                     crossAxisCount: 2,
                     crossAxisSpacing: 4.0,
@@ -79,10 +79,10 @@ class _BodyState extends State<Body> {
                     })),
               ),
             ),
-            Expanded(
+            const Expanded(
               child: ButtonOrder(),
             ),
-            SizedBox(
+            const SizedBox(
               height: 30.0,
             )
           ],

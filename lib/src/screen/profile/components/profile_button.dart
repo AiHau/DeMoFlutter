@@ -13,7 +13,7 @@ class ButtonProfile extends StatelessWidget {
       children: [
         Expanded(
             child: Container(
-          padding: EdgeInsets.fromLTRB(0.0, 5.0, 10.0, 5.0),
+          padding: const EdgeInsets.fromLTRB(0.0, 5.0, 10.0, 5.0),
           child: buttonCategories(
               text: 'About Me',
               color: 0xffFFFFFF,

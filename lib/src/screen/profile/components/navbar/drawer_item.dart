@@ -5,9 +5,11 @@ class DrawerItem extends StatelessWidget {
       {Key? key,
       required this.text,
       required this.icon,
-      required this.onPressed})
+      required this.onPressed,
+      required this.colors})
       : super(key: key);
   final String text;
+  final int colors;
   final IconData icon;
   final Function() onPressed;
 
@@ -18,19 +20,20 @@ class DrawerItem extends StatelessWidget {
         children: [
           CircleAvatar(
             radius: 40,
-            backgroundColor: Colors.black38,
+            // backgroundColor: Colors.black38,
+            backgroundColor: Color(colors),
             child: Icon(
               icon,
               size: 20,
               color: Colors.white,
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 10,
           ),
           Text(
             text,
-            style: TextStyle(
+            style: const TextStyle(
                 fontSize: 15, color: Colors.white, fontWeight: FontWeight.w500),
           )
         ],

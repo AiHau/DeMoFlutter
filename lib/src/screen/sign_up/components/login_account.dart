@@ -11,11 +11,11 @@ class AccountText extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        Text("Already have an account?",
+        const Text("Already have an account?",
             style: TextStyle(color: Color(0xff838391), fontSize: 16)),
         GestureDetector(
           onTap: () => Navigator.pushNamed(context, SignInScreen.routeName),
-          child: Text(
+          child: const Text(
             " Sign In",
             style: TextStyle(
                 color: Color.fromARGB(255, 230, 134, 45),

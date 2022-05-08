@@ -28,18 +28,18 @@ class _BodyState extends State<Body> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Container(
-        padding: EdgeInsets.symmetric(horizontal: 35),
+        padding: const EdgeInsets.symmetric(horizontal: 35),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Container(
-              padding: EdgeInsets.only(top: 30, bottom: 14),
+              padding: const EdgeInsets.only(top: 30, bottom: 14),
               child: _listSetting(),
             ),
             GestureDetector(
               onTap: () =>
                   Navigator.pushNamed(context, ListPaymentScreen.routeName),
-              child: Text(
+              child: const Text(
                 'Log out',
                 style: TextStyle(
                     fontSize: 16,

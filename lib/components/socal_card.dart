@@ -14,7 +14,7 @@ class SocalCard extends StatelessWidget {
     return GestureDetector(
       onTap: () => press,
       child: Container(
-        decoration: BoxDecoration(),
+        decoration: const BoxDecoration(),
         child: Image.asset(icon),
       ),
     );

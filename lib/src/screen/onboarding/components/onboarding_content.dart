@@ -13,7 +13,7 @@ class OnboardingContent extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Spacer(flex: 2),
+        const Spacer(flex: 2),
         Text(
           title,
           textAlign: TextAlign.center,
@@ -22,15 +22,15 @@ class OnboardingContent extends StatelessWidget {
               .headline5!
               .copyWith(fontWeight: FontWeight.w500),
         ),
-        Spacer(flex: 2),
+        const Spacer(flex: 2),
         Image.asset(image),
-        Spacer(flex: 2),
+        const Spacer(flex: 2),
         Text(
           text,
           textAlign: TextAlign.center,
-          style: TextStyle(color: Color(0xfffC0C0C0)),
+          style: const TextStyle(color: Color(0xfffC0C0C0)),
         ),
-        Spacer(),
+        const Spacer(),
       ],
     );
   }

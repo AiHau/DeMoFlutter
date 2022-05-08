@@ -1,4 +1,5 @@
 import 'package:demo/components/stateful/button_categories.dart';
+import 'package:demo/src/screen/construction/components/button_construction.dart';
 import 'package:demo/src/screen/construction/components/item_construction.dart';
 import 'package:demo/src/screen/listpayment/list_payment_screen.dart';
 import 'package:demo/src/screen/order_in_progress/order_screen.dart';
@@ -24,14 +25,14 @@ class _BodyState extends State<Body> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Padding(
-        padding: EdgeInsets.symmetric(horizontal: 35, vertical: 20),
+        padding: const EdgeInsets.symmetric(horizontal: 35, vertical: 20),
         //child: SingleChildScrollView(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Container(
-              padding: EdgeInsets.fromLTRB(15.0, 0.0, 0.0, 0.0),
-              color: Color(0xffededed),
+              padding: const EdgeInsets.fromLTRB(15.0, 0.0, 0.0, 0.0),
+              color: const Color(0xffededed),
               height: 60,
               child: Row(
                 children: const [
@@ -50,36 +51,7 @@ class _BodyState extends State<Body> {
                 child: _listConstruction(),
               ),
             ),
-            Container(
-              margin: EdgeInsets.only(bottom: 10.0),
-              child: Row(
-                children: [
-                  Expanded(
-                      child: Container(
-                    padding: EdgeInsets.fromLTRB(0.0, 5.0, 10.0, 5.0),
-                    child: buttonCategories(
-                        text: 'Skip',
-                        color: 0xffFFFFFF,
-                        colorText: 0xffC0C0C0,
-                        press: () {
-                          Navigator.pushNamed(context, OrderScreen.routeName);
-                        }),
-                  )),
-                  Expanded(
-                      child: Container(
-                    padding: const EdgeInsets.fromLTRB(10.0, 5.0, 0.0, 5.0),
-                    child: buttonCategories(
-                        text: 'Done',
-                        color: 0xff20C3AF,
-                        colorText: 0xffFFFFFF,
-                        press: () {
-                          Navigator.pushNamed(
-                              context, ListPaymentScreen.routeName);
-                        }),
-                  )),
-                ],
-              ),
-            )
+            const buttonConstruction()
           ],
         ),
         // ),

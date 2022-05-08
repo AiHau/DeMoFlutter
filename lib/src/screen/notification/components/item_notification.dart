@@ -9,44 +9,42 @@ class itemNotification extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Column(
-        children: [
-          Row(
-            children: [
-              Image.asset(image),
-              Container(
-                padding: const EdgeInsets.only(left: 10.0),
-                child: Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        name,
-                        style: const TextStyle(
-                            fontSize: 16, fontWeight: FontWeight.w500),
-                      ),
-                      Text(
-                        company,
-                        style: const TextStyle(fontSize: 16.0, color: Colors.grey),
-                      ),
-                    ]),
-              ),
-            ],
-          ),
-          Text(
-            content,
-            style: const TextStyle(
-                height: 1.8,
-                fontSize: 16,
-                color: Color.fromARGB(255, 103, 102, 102)),
-          ),
-          const Divider(
-            height: 50,
-            thickness: 1,
-            color: Color.fromARGB(255, 238, 238, 240),
-          ),
-        ],
-      ),
+    return Column(
+      children: [
+        Row(
+          children: [
+            Image.asset(image),
+            Container(
+              padding: const EdgeInsets.only(left: 10.0),
+              child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      name,
+                      style: const TextStyle(
+                          fontSize: 16, fontWeight: FontWeight.w500),
+                    ),
+                    Text(
+                      company,
+                      style: const TextStyle(fontSize: 16.0, color: Colors.grey),
+                    ),
+                  ]),
+            ),
+          ],
+        ),
+        Text(
+          content,
+          style: const TextStyle(
+              height: 1.8,
+              fontSize: 16,
+              color: Color.fromARGB(255, 103, 102, 102)),
+        ),
+        const Divider(
+          height: 50,
+          thickness: 1,
+          color: Color.fromARGB(255, 238, 238, 240),
+        ),
+      ],
     );
   }
 }

@@ -15,14 +15,14 @@ class _BodyState extends State<Body> {
       child: Column(
         children: [
           Container(
-            padding: EdgeInsets.symmetric(horizontal: 30),
+            padding: const EdgeInsets.symmetric(horizontal: 30),
             child: Container(
-                margin: EdgeInsets.only(top: 30),
+                margin: const EdgeInsets.only(top: 30),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Container(
-                      margin: EdgeInsets.only(bottom: 25),
+                      margin: const EdgeInsets.only(bottom: 25),
                       child: const Text(
                         "Portfolio",
                         style: TextStyle(
@@ -32,8 +32,8 @@ class _BodyState extends State<Body> {
                       ),
                     ),
                     Container(
-                      margin: EdgeInsets.only(bottom: 20),
-                      child: Text(
+                      margin: const EdgeInsets.only(bottom: 20),
+                      child: const Text(
                         "The last completed works of the contractor are show below.",
                         style: TextStyle(
                             height: 1.5,
@@ -42,7 +42,7 @@ class _BodyState extends State<Body> {
                             color: Color.fromARGB(255, 127, 126, 126)),
                       ),
                     ),
-                    Container(
+                    SizedBox(
                       width: double.infinity,
                       height: 254,
                       child: Row(
@@ -54,22 +54,19 @@ class _BodyState extends State<Body> {
                                   "assets/images/portfolio.png",
                                   fit: BoxFit.cover,
                                 )),
-                            Container(
-                              child: Column(
-                                mainAxisAlignment:
-                                    MainAxisAlignment.spaceBetween,
-                                children: [
-                                  Image.asset("assets/images/portfolio_2.png"),
-                                  Image.asset("assets/images/portfolio_3.png"),
-                                  Image.asset("assets/images/portfolio_4.png"),
-                                  Image.asset("assets/images/portfolio_5.png"),
-                                ],
-                              ),
+                            Column(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Image.asset("assets/images/portfolio_2.png"),
+                                Image.asset("assets/images/portfolio_3.png"),
+                                Image.asset("assets/images/portfolio_4.png"),
+                                Image.asset("assets/images/portfolio_5.png"),
+                              ],
                             ),
                           ]),
                     ),
                     Container(
-                      margin: EdgeInsets.symmetric(vertical: 15),
+                      margin: const EdgeInsets.symmetric(vertical: 15),
                       width: 114,
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -84,7 +81,7 @@ class _BodyState extends State<Body> {
                     ),
                     Container(
                       margin: const EdgeInsets.symmetric(vertical: 15),
-                      child: Text("Details",
+                      child: const Text("Details",
                           style: TextStyle(
                               fontSize: 23.5,
                               fontWeight: FontWeight.w500,
@@ -112,7 +109,7 @@ class _BodyState extends State<Body> {
                             decoration: TextDecoration.underline),
                       ),
                     ),
-                    SizedBox(height: 20)
+                    const SizedBox(height: 20)
                   ],
                 )),
           ),

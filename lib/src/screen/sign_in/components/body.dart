@@ -10,15 +10,16 @@ class Body extends StatelessWidget {
       child: SizedBox(
         width: double.infinity,
         child: Padding(
-          padding: EdgeInsets.symmetric(horizontal: 20.0),
+          padding: const EdgeInsets.symmetric(horizontal: 20.0),
           child: SingleChildScrollView(
             child: Column(
               children: [
                 Container(
-                  margin: EdgeInsets.symmetric(vertical: 35),
-                  child: Image(image: AssetImage("assets/images/sign_in.png")),
+                  margin: const EdgeInsets.symmetric(vertical: 35),
+                  child: const Image(
+                      image: AssetImage("assets/images/sign_in.png")),
                 ),
-                SignForm(),
+                const SignForm(),
               ],
             ),
           ),

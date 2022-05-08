@@ -17,11 +17,11 @@ class DefaultButton extends StatelessWidget {
       width: double.infinity,
       height: 50,
       child: FlatButton(
-        color: Color(0xff20C3AF),
+        color: const Color(0xff20C3AF),
         onPressed: press as void Function()?,
         child: Text(
           text!,
-          style: TextStyle(fontSize: 18, color: Colors.white),
+          style: const TextStyle(fontSize: 18, color: Colors.white),
         ),
       ),
     );

@@ -33,11 +33,11 @@ class _BodyState extends State<Body> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Container(
-        padding: EdgeInsets.symmetric(horizontal: 30),
+        padding: const EdgeInsets.symmetric(horizontal: 30),
         child: Column(
           children: [
             Container(
-              margin: EdgeInsets.only(top: 30),
+              margin: const EdgeInsets.only(top: 30),
               child: Column(
                 children: [
                   _servicetData(),
@@ -76,7 +76,7 @@ class _BodyState extends State<Body> {
                       Navigator.pushNamed(context, CustomerScreen.routeName);
                     },
                   ),
-                  SizedBox(height: 20),
+                  const SizedBox(height: 20),
                   GestureDetector(
                     // onTap: () => Navigator.pushNamed(context, SignUpScreen.routeName),
                     child: const Text(

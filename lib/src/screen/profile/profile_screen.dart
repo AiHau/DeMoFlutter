@@ -9,7 +9,7 @@ class ProfileScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: NavBar(),
+      drawer: const NavBar(),
       appBar: AppBar(
         foregroundColor: Colors.black,
         leading: IconButton(
@@ -28,7 +28,7 @@ class ProfileScreen extends StatelessWidget {
           )
         ],
       ),
-      body: Body(),
+      body: const Body(),
     );
   }
 }

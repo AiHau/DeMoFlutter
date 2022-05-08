@@ -16,11 +16,11 @@ class _SignFormState extends State<SignForm> {
   Widget build(BuildContext context) {
     return Form(
       child: Container(
-        margin: EdgeInsets.symmetric(horizontal: 20),
+        margin: const EdgeInsets.symmetric(horizontal: 20),
         child: Column(
           children: [
             Container(
-              color: Color.fromARGB(255, 235, 234, 234),
+              color: const Color.fromARGB(255, 235, 234, 234),
               height: 60,
               padding: const EdgeInsets.symmetric(horizontal: 20.0),
               child: Center(
@@ -86,8 +86,8 @@ class _SignFormState extends State<SignForm> {
                 ),
               ],
             ),
-            SizedBox(height: 30.0),
-            NoAccountText(),
+            const SizedBox(height: 40.0),
+            const NoAccountText(),
           ],
         ),
       ),
@@ -116,8 +116,8 @@ class buildPasswordFormField extends StatelessWidget {
       decoration: InputDecoration(
         hintText: 'Password',
         border: InputBorder.none,
-        suffixIcon:
-            IconButton(icon: Icon(Icons.visibility_off), onPressed: () {}),
+        suffixIcon: IconButton(
+            icon: const Icon(Icons.visibility_off), onPressed: () {}),
       ),
     );
   }

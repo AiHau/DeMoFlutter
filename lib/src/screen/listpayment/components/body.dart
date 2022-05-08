@@ -41,13 +41,13 @@ class _BodyState extends State<Body> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Container(
-        padding: EdgeInsets.symmetric(horizontal: 35),
+        padding: const EdgeInsets.symmetric(horizontal: 35),
         child: Column(
           children: [
             Expanded(
               flex: 10,
               child: Container(
-                padding: EdgeInsets.symmetric(vertical: 30),
+                padding: const EdgeInsets.symmetric(vertical: 30),
                 child: _listPaymentData(),
               ),
             ),
@@ -59,7 +59,7 @@ class _BodyState extends State<Body> {
                 },
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 30.0,
             )
           ],

@@ -25,33 +25,37 @@ class _BodyState extends State<Body> {
                   DrawerItem(
                     text: 'Home',
                     icon: Icons.home,
+                    colors: 0xff20C3AF,
                     onPressed: () => onItemPressed(context, index: 0),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 30,
                   ),
                   DrawerItem(
                     text: 'Profile',
                     icon: Icons.person,
+                    colors: 0xff20C3AF,
                     onPressed: () => onItemPressed(context, index: 1),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 30,
                   ),
                   DrawerItem(
                     text: 'Settings',
                     icon: Icons.settings_outlined,
+                    colors: 0xff323440,
                     onPressed: () => onItemPressed(context, index: 2),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 30,
                   ),
                   DrawerItem(
                     text: 'Messages',
+                    colors: 0xff323440,
                     icon: Icons.mail_outline_sharp,
                     onPressed: () => onItemPressed(context, index: 3),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 30,
                   ),
                 ],

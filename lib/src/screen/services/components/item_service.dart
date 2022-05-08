@@ -16,7 +16,7 @@ class itemService extends StatelessWidget {
             child: Row(
               children: [
                 Container(
-                  margin: EdgeInsets.only(right: 20),
+                  margin: const EdgeInsets.only(right: 20),
                   child: Expanded(
                     child: Image.asset(
                       image,
@@ -35,7 +35,7 @@ class itemService extends StatelessWidget {
                   ),
                 ),
                 Container(
-                  margin: EdgeInsets.only(left: 10),
+                  margin: const EdgeInsets.only(left: 10),
                   child: Expanded(
                     child: Text(
                       money,

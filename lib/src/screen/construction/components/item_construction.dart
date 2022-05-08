@@ -22,29 +22,29 @@ class _itemConstructionState extends State<itemConstruction> {
             border: Border.all(
                 width: 1.0,
                 color: (selected == widget.id)
-                    ? Color(0xffFFB19D)
+                    ? const Color(0xffFFB19D)
                     : const Color.fromARGB(255, 241, 238, 238))),
         height: 60,
-        margin: EdgeInsets.only(bottom: 16),
+        margin: const EdgeInsets.only(bottom: 16),
         child:
             Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
           Container(
-              padding: EdgeInsets.only(left: 16),
+              padding: const EdgeInsets.only(left: 16),
               child: Text(
                 widget.text,
                 style: TextStyle(
                     fontSize: 16.5,
                     fontWeight: FontWeight.w500,
                     color: (selected == widget.id)
-                        ? Color(0xff525464)
-                        : Color(0xff838391)),
+                        ? const Color(0xff525464)
+                        : const Color(0xff838391)),
               )),
           Container(
               height: 60,
               width: 60,
               color: (selected == widget.id)
-                  ? Color(0xffFFB19D)
-                  : Color.fromARGB(255, 241, 238, 238),
+                  ? const Color(0xffFFB19D)
+                  : const Color.fromARGB(255, 241, 238, 238),
               child: Icon(
                 (selected == widget.id) ? Icons.check : Icons.add,
                 color: (selected == widget.id) ? Colors.white : Colors.black,

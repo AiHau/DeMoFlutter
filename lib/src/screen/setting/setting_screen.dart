@@ -31,7 +31,7 @@ class SettingScreen extends StatelessWidget {
           )
         ],
       ),
-      body: Body(),
+      body: const Body(),
     );
   }
 }

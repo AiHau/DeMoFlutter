@@ -53,9 +53,9 @@ class _categoriesScreenState extends State<categoriesScreen> {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          SizedBox(height: 10.0),
+          const SizedBox(height: 10.0),
           _searchByCategories(),
-          SizedBox(height: 20.0),
+          const SizedBox(height: 20.0),
           Expanded(child: _listCategories()),
           _buttonCategories(),
         ],
@@ -65,8 +65,8 @@ class _categoriesScreenState extends State<categoriesScreen> {
 
   Widget _searchByCategories() {
     return Container(
-      padding: EdgeInsets.fromLTRB(15.0, 0.0, 0.0, 0.0),
-      color: Color(0xffededed),
+      padding: const EdgeInsets.fromLTRB(15.0, 0.0, 0.0, 0.0),
+      color: const Color(0xffededed),
       height: 60,
       child: Row(
         children: const [
@@ -97,7 +97,7 @@ class _categoriesScreenState extends State<categoriesScreen> {
       children: [
         Expanded(
             child: Container(
-          padding: EdgeInsets.fromLTRB(0.0, 5.0, 10.0, 5.0),
+          padding: const EdgeInsets.fromLTRB(0.0, 5.0, 10.0, 5.0),
           child: buttonCategories(
               text: 'Back',
               color: 0xffFFFFFF,

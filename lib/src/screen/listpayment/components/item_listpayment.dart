@@ -12,8 +12,8 @@ class itemListPayment extends StatelessWidget {
       height: 90,
       width: double.infinity,
       decoration: BoxDecoration(
-          border: Border.all(width: 1.0, color: Color(0xffededed))),
-      margin: EdgeInsets.only(bottom: 16.0),
+          border: Border.all(width: 1.0, color: const Color(0xffededed))),
+      margin: const EdgeInsets.only(bottom: 16.0),
       child: Row(
         children: [
           Expanded(flex: 1, child: Image.asset(image)),
@@ -25,11 +25,12 @@ class itemListPayment extends StatelessWidget {
               children: [
                 Text(
                   number,
-                  style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500),
+                  style: const TextStyle(
+                      fontSize: 16, fontWeight: FontWeight.w500),
                 ),
                 Text(
                   time,
-                  style: TextStyle(color: Colors.grey),
+                  style: const TextStyle(color: Colors.grey),
                 ),
               ],
             ),

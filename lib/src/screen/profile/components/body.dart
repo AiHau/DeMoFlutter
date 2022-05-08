@@ -59,10 +59,11 @@ class _BodyState extends State<Body> {
           ),
           Expanded(
             child: Container(
-              color: Color(0xFF525464),
+              color: const Color(0xFF525464),
               child: Container(
-                  color: Color(0xFF525464),
-                  margin: EdgeInsets.only(top: 40, left: 30.0, right: 30.0),
+                  color: const Color(0xFF525464),
+                  margin:
+                      const EdgeInsets.only(top: 40, left: 30.0, right: 30.0),
                   child: _listProfile()),
             ),
           ),

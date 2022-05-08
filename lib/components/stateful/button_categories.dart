@@ -26,7 +26,8 @@ class _buttonCategoriesState extends State<buttonCategories> {
       width: double.infinity,
       height: 60,
       child: FlatButton(
-        shape: RoundedRectangleBorder(side: BorderSide(color: Colors.black12)),
+        shape: const RoundedRectangleBorder(
+            side: BorderSide(color: Colors.black12)),
         color: Color(widget.color),
         onPressed: widget.press as void Function()?,
         child: Text(

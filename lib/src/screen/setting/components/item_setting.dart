@@ -9,8 +9,8 @@ class itemSetting extends StatelessWidget {
     return Container(
       height: 80,
       width: double.infinity,
-      color: Color(0xffededed),
-      margin: EdgeInsets.only(bottom: 16.0),
+      color: const Color(0xffededed),
+      margin: const EdgeInsets.only(bottom: 16.0),
       child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 15.0),
         child: Row(
@@ -18,11 +18,12 @@ class itemSetting extends StatelessWidget {
           children: [
             Text(
               text,
-              style: TextStyle(fontWeight: FontWeight.w500, color: Colors.grey),
+              style: const TextStyle(
+                  fontWeight: FontWeight.w500, color: Colors.grey),
             ),
             Icon(
               icon,
-              color: Color.fromARGB(255, 90, 90, 90),
+              color: const Color.fromARGB(255, 90, 90, 90),
               size: 16,
             ),
           ],

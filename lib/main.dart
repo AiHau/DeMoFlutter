@@ -1,7 +1,6 @@
 // ignore_for_file: prefer_const_constructors, deprecated_member_use
 
 import 'package:demo/routs.dart';
-import 'package:demo/src/screen/categories/categories_screen.dart';
 import 'package:demo/src/screen/onboarding/onboarding_screen.dart';
 import 'package:flutter/material.dart';
 

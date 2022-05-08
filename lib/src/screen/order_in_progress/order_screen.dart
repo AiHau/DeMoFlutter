@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 
 class OrderScreen extends StatelessWidget {
   static String routeName = "/order";
-  const OrderScreen({ Key? key }) : super(key: key);
+  const OrderScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -31,7 +31,7 @@ class OrderScreen extends StatelessWidget {
           )
         ],
       ),
-      body: Body(),
+      body: const Body(),
     );
   }
 }

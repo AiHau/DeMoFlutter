@@ -50,7 +50,7 @@ class _BodyState extends State<Body> {
   }
 
   autoNextPage() {
-    Timer.periodic(const Duration(seconds: 10), (timer) {
+    Timer.periodic(const Duration(seconds: 2), (timer) {
       if (currentPage < onboardingData.length - 1) {
         setState(() {
           currentPage = currentPage + 1;
@@ -100,9 +100,9 @@ class _BodyState extends State<Body> {
                 padding: const EdgeInsets.symmetric(horizontal: 20),
                 child: Column(
                   children: [
-                    Spacer(),
+                    const Spacer(),
                     currentPage == onboardingData.length - 1
-                        ? SizedBox()
+                        ? const SizedBox()
                         : Row(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: List.generate(
@@ -110,10 +110,10 @@ class _BodyState extends State<Body> {
                               (index) => buildDot(index: index),
                             ),
                           ),
-                    Spacer(),
+                    const Spacer(),
                     currentPage == onboardingData.length - 1
                         ? FloatingActionButton(
-                            backgroundColor: Color(0xff20C3AF),
+                            backgroundColor: const Color(0xff20C3AF),
                             onPressed: () {
                               Navigator.pushNamed(
                                   context, SignInScreen.routeName);
@@ -142,11 +142,13 @@ class _BodyState extends State<Body> {
   AnimatedContainer buildDot({required int index}) {
     return AnimatedContainer(
       duration: kThemeAnimationDuration,
-      margin: EdgeInsets.only(right: 5),
+      margin: const EdgeInsets.only(right: 5),
       height: 6,
       width: currentPage == index ? 20 : 6,
       decoration: BoxDecoration(
-        color: currentPage == index ? Color(0xffC0C0C0) : Color(0xffcdcdcd),
+        color: currentPage == index
+            ? const Color(0xffC0C0C0)
+            : const Color(0xffcdcdcd),
         borderRadius: BorderRadius.circular(3),
       ),
     );

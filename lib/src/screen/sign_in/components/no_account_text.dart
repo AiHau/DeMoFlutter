@@ -8,22 +8,25 @@ class NoAccountText extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        Text("Don't have an account?",
-            style: TextStyle(color: Color(0xff838391), fontSize: 16)),
-        GestureDetector(
-          onTap: () => Navigator.pushNamed(context, SignUpScreen.routeName),
-          child: Text(
-            " Sign Up",
-            style: TextStyle(
-                color: Color.fromARGB(255, 230, 134, 45),
-                fontSize: 16,
-                decoration: TextDecoration.underline),
+    return Container(
+      margin: const EdgeInsets.only(bottom: 30),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          const Text("Don't have an account?",
+              style: TextStyle(color: Color(0xff838391), fontSize: 16)),
+          GestureDetector(
+            onTap: () => Navigator.pushNamed(context, SignUpScreen.routeName),
+            child: const Text(
+              " Sign Up",
+              style: TextStyle(
+                  color: Color.fromARGB(255, 230, 134, 45),
+                  fontSize: 16,
+                  decoration: TextDecoration.underline),
+            ),
           ),
-        ),
-      ],
+        ],
+      ),
     );
   }
 }

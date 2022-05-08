@@ -31,7 +31,7 @@ class ConstructionScreen extends StatelessWidget {
           )
         ],
       ),
-      body: Body(),
+      body: const Body(),
     );
   }
 }
