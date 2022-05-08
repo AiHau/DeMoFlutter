@@ -19,7 +19,7 @@ class StackPaymentCard extends StatelessWidget {
             borderRadius: BorderRadius.all(Radius.circular(8.0)),
             gradient: LinearGradient(
               colors: [
-                Color.fromARGB(255, 61, 203, 160),
+                Color.fromARGB(255, 22, 186, 137),
                 Color(0xFF0284D8),
               ],
               begin: FractionalOffset(0.0, 0.0),

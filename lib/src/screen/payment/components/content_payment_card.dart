@@ -21,9 +21,9 @@ class ContentPaymentCard extends StatelessWidget {
           ),
         ),
         Container(
-          color: Color.fromARGB(255, 244, 242, 242),
-          margin: EdgeInsets.only(top: 20),
-          padding: EdgeInsets.symmetric(horizontal: 23),
+          color: const Color.fromARGB(255, 244, 242, 242),
+          margin: const EdgeInsets.only(top: 20),
+          padding: const EdgeInsets.symmetric(horizontal: 23),
           height: 60,
           child: Row(
             children: const [
@@ -50,48 +50,46 @@ class ContentPaymentCard extends StatelessWidget {
           ),
         ),
         Container(
-          margin: EdgeInsets.only(top: 30),
+          margin: const EdgeInsets.only(top: 30),
           child: Row(
             children: [
-              Container(
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    const Padding(
-                      padding: EdgeInsets.only(bottom: 20),
-                      child: Text(
-                        "Exp. Month",
-                        style: TextStyle(
-                            fontSize: 16,
-                            fontWeight: FontWeight.w500,
-                            color: Color.fromARGB(255, 101, 101, 101)),
-                      ),
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  const Padding(
+                    padding: EdgeInsets.only(bottom: 20),
+                    child: Text(
+                      "Exp. Month",
+                      style: TextStyle(
+                          fontSize: 16,
+                          fontWeight: FontWeight.w500,
+                          color: Color.fromARGB(255, 101, 101, 101)),
                     ),
-                    Container(
-                      height: 60,
-                      width: 103,
-                      color: Color.fromARGB(255, 244, 242, 242),
-                      margin: EdgeInsets.only(right: 10),
-                      padding: EdgeInsets.symmetric(horizontal: 10),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: const [
-                          Text(
-                            "07",
-                            style: TextStyle(
-                                fontSize: 17,
-                                color: Color.fromARGB(255, 176, 174, 174)),
-                          ),
-                          Icon(
-                            Icons.expand_more,
-                            size: 22,
-                            color: Color.fromARGB(255, 118, 117, 117),
-                          ),
-                        ],
-                      ),
-                    )
-                  ],
-                ),
+                  ),
+                  Container(
+                    height: 60,
+                    width: 103,
+                    color: const Color.fromARGB(255, 244, 242, 242),
+                    margin: const EdgeInsets.only(right: 10),
+                    padding: const EdgeInsets.symmetric(horizontal: 10),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: const [
+                        Text(
+                          "07",
+                          style: TextStyle(
+                              fontSize: 17,
+                              color: Color.fromARGB(255, 176, 174, 174)),
+                        ),
+                        Icon(
+                          Icons.expand_more,
+                          size: 22,
+                          color: Color.fromARGB(255, 118, 117, 117),
+                        ),
+                      ],
+                    ),
+                  )
+                ],
               ),
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -107,9 +105,9 @@ class ContentPaymentCard extends StatelessWidget {
                   Container(
                     height: 60,
                     width: 103,
-                    color: Color.fromARGB(255, 244, 242, 242),
-                    margin: EdgeInsets.only(right: 10),
-                    padding: EdgeInsets.symmetric(horizontal: 10),
+                    color: const Color.fromARGB(255, 244, 242, 242),
+                    margin: const EdgeInsets.only(right: 10),
+                    padding: const EdgeInsets.symmetric(horizontal: 10),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: const [
@@ -144,8 +142,8 @@ class ContentPaymentCard extends StatelessWidget {
                     Container(
                       height: 60,
                       width: 103,
-                      color: Color.fromARGB(255, 244, 242, 242),
-                      padding: EdgeInsets.symmetric(horizontal: 12),
+                      color: const Color.fromARGB(255, 244, 242, 242),
+                      padding: const EdgeInsets.symmetric(horizontal: 12),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: const [

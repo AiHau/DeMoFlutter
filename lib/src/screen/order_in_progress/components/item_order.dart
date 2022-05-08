@@ -12,7 +12,8 @@ class itemOrder extends StatelessWidget {
         Image.asset(image),
         Text(
           title,
-          style: const TextStyle(fontWeight: FontWeight.w500),
+          style: const TextStyle(
+              color: Color(0xff525464), fontWeight: FontWeight.w500),
         ),
         Text(
           money,

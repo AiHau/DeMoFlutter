@@ -98,6 +98,7 @@ class _SignFormState extends State<SignForm> {
     return TextFormField(
       decoration: const InputDecoration(
         hintText: 'Username',
+        hintStyle: TextStyle(color: Colors.grey),
         border: InputBorder.none,
       ),
     );
@@ -115,6 +116,7 @@ class buildPasswordFormField extends StatelessWidget {
       keyboardType: TextInputType.emailAddress,
       decoration: InputDecoration(
         hintText: 'Password',
+        hintStyle: const TextStyle(color: Colors.grey),
         border: InputBorder.none,
         suffixIcon: IconButton(
             icon: const Icon(Icons.visibility_off), onPressed: () {}),
