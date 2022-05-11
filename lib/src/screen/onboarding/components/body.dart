@@ -50,7 +50,7 @@ class _BodyState extends State<Body> {
   }
 
   autoNextPage() {
-    Timer.periodic(const Duration(seconds: 2), (timer) {
+    Timer.periodic(const Duration(seconds: 5), (timer) {
       if (currentPage < onboardingData.length - 1) {
         setState(() {
           currentPage = currentPage + 1;

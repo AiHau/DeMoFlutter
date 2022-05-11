@@ -7,19 +7,25 @@ class itemOrder extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Image.asset(image),
-        Text(
-          title,
-          style: const TextStyle(
-              color: Color(0xff525464), fontWeight: FontWeight.w500),
-        ),
-        Text(
-          money,
-          style: const TextStyle(color: Colors.grey),
-        ),
-      ],
+    return Container(
+      margin: const EdgeInsets.only(bottom: 30),
+      child: Column(
+        children: [
+          Image.asset(image),
+          Container(
+            margin: const EdgeInsets.only(top: 10),
+            child: Text(
+              title,
+              style: const TextStyle(
+                  color: Color(0xff525464), fontWeight: FontWeight.w500),
+            ),
+          ),
+          Text(
+            money,
+            style: const TextStyle(color: Colors.grey),
+          ),
+        ],
+      ),
     );
   }
 }

@@ -12,7 +12,7 @@ class ButtonOrder extends StatelessWidget {
       children: [
         Expanded(
             child: Container(
-          padding: const EdgeInsets.fromLTRB(0.0, 5.0, 10.0, 5.0),
+          padding: const EdgeInsets.fromLTRB(10.0, 5.0, 10.0, 5.0),
           child: buttonCategories(
               text: 'Archive',
               color: 0xffFFFFFF,
@@ -23,7 +23,7 @@ class ButtonOrder extends StatelessWidget {
         )),
         Expanded(
             child: Container(
-          padding: const EdgeInsets.fromLTRB(10.0, 5.0, 0.0, 5.0),
+          padding: const EdgeInsets.fromLTRB(10.0, 5.0, 10.0, 5.0),
           child: buttonCategories(
               text: 'In work',
               color: 0xff20C3AF,
